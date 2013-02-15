@@ -1,0 +1,19 @@
+# Tested
+- Running logplex
+  - currently, need to create API credentials manually w/ erlang REPL
+- Posting logs
+  - silently fails if log fmt is wrong
+- Retreiving logs
+- Tailing logs
+  - logplex doesn't set 'Transfer-Encoding: Chunked'
+
+# Known but untested
+- Drains
+- Redis replication
+
+# Unknown
+- Running multiple logplex instances (should work)
+- Integrating logplex with existing CF logging infrastructure
+  - syslog_aggregator
+  - steno log fmt
+
